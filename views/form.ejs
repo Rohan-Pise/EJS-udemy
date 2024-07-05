@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <% if(locals.name){ %>
+    <h1>Your name is <%= name %></h1>
+    <h2>Welcome and good morning</h2>
+ <% } else { %>
+    <h1>Enter Your name below</h1>
+<% } %>
+
+  <form action="/submit" method="POST">
+
+    <input type="text" name="fname" placeholder="Enter Your First Name">
+    <input type="text" name="lname" placeholder="Ener your lastname">
+    <input type="submit" value="OK">
+  </form>
+
+  
+</body>
+</html>
